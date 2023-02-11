@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		870ED2362996D1E800B477B2 /* Extension + Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED2352996D1E700B477B2 /* Extension + Color.swift */; };
+		870ED23E29976E8B00B477B2 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED23D29976E8B00B477B2 /* MainView.swift */; };
+		870ED2402997704200B477B2 /* ProgressTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED23F2997704200B477B2 /* ProgressTrackView.swift */; };
+		870ED242299770AD00B477B2 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED241299770AD00B477B2 /* ProgressBarView.swift */; };
+		870ED244299771EE00B477B2 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED243299771EE00B477B2 /* ClockView.swift */; };
 		87D9F5612996D0600092FD11 /* CrocodileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D9F5602996D0600092FD11 /* CrocodileApp.swift */; };
-		87D9F5632996D0600092FD11 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D9F5622996D0600092FD11 /* ContentView.swift */; };
 		87D9F5652996D0620092FD11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D9F5642996D0620092FD11 /* Assets.xcassets */; };
 		87D9F5682996D0620092FD11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D9F5672996D0620092FD11 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		870ED2352996D1E700B477B2 /* Extension + Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + Color.swift"; sourceTree = "<group>"; };
+		870ED23D29976E8B00B477B2 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		870ED23F2997704200B477B2 /* ProgressTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTrackView.swift; sourceTree = "<group>"; };
+		870ED241299770AD00B477B2 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		870ED243299771EE00B477B2 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		87D9F55D2996D0600092FD11 /* Crocodile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crocodile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D9F5602996D0600092FD11 /* CrocodileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrocodileApp.swift; sourceTree = "<group>"; };
-		87D9F5622996D0600092FD11 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		87D9F5642996D0620092FD11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87D9F5672996D0620092FD11 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +60,11 @@
 			isa = PBXGroup;
 			children = (
 				87D9F5602996D0600092FD11 /* CrocodileApp.swift */,
-				87D9F5622996D0600092FD11 /* ContentView.swift */,
+				870ED23D29976E8B00B477B2 /* MainView.swift */,
+				870ED243299771EE00B477B2 /* ClockView.swift */,
+				870ED23F2997704200B477B2 /* ProgressTrackView.swift */,
+				870ED241299770AD00B477B2 /* ProgressBarView.swift */,
+				870ED2352996D1E700B477B2 /* Extension + Color.swift */,
 				87D9F5642996D0620092FD11 /* Assets.xcassets */,
 				87D9F5662996D0620092FD11 /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87D9F5632996D0600092FD11 /* ContentView.swift in Sources */,
+				870ED23E29976E8B00B477B2 /* MainView.swift in Sources */,
+				870ED244299771EE00B477B2 /* ClockView.swift in Sources */,
+				870ED2362996D1E800B477B2 /* Extension + Color.swift in Sources */,
 				87D9F5612996D0600092FD11 /* CrocodileApp.swift in Sources */,
+				870ED2402997704200B477B2 /* ProgressTrackView.swift in Sources */,
+				870ED242299770AD00B477B2 /* ProgressBarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
