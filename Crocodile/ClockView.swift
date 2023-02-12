@@ -20,7 +20,7 @@ struct ClockView: View {
         }
     }
     
-    func counterToMinutes() -> String {
+    private func counterToMinutes() -> String {
         let currentTime = 5 - counter
         let seconds = currentTime % 60
         let minutes = Int(currentTime / 60)

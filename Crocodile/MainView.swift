@@ -20,6 +20,10 @@ struct MainView: View {
                 
                 if wordLabelIsHidden {
                     WordView()
+                } else {
+                    Text(" ")
+                        .font(.custom("Avenir Next", size: 30))
+                        .fontWeight(.bold)
                 }
                 
                 Spacer()
