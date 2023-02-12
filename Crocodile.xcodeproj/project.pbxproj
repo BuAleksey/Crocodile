@@ -12,6 +12,9 @@
 		870ED2402997704200B477B2 /* ProgressTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED23F2997704200B477B2 /* ProgressTrackView.swift */; };
 		870ED242299770AD00B477B2 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED241299770AD00B477B2 /* ProgressBarView.swift */; };
 		870ED244299771EE00B477B2 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED243299771EE00B477B2 /* ClockView.swift */; };
+		874FA4AE2998DD7100A58D4B /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874FA4AD2998DD7100A58D4B /* StartButtonView.swift */; };
+		874FA4B12998DDE400A58D4B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874FA4B02998DDE400A58D4B /* DataStore.swift */; };
+		874FA4B32998E90300A58D4B /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874FA4B22998E90300A58D4B /* WordView.swift */; };
 		87D9F5612996D0600092FD11 /* CrocodileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D9F5602996D0600092FD11 /* CrocodileApp.swift */; };
 		87D9F5652996D0620092FD11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D9F5642996D0620092FD11 /* Assets.xcassets */; };
 		87D9F5682996D0620092FD11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87D9F5672996D0620092FD11 /* Preview Assets.xcassets */; };
@@ -23,6 +26,9 @@
 		870ED23F2997704200B477B2 /* ProgressTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTrackView.swift; sourceTree = "<group>"; };
 		870ED241299770AD00B477B2 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		870ED243299771EE00B477B2 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		874FA4AD2998DD7100A58D4B /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		874FA4B02998DDE400A58D4B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		874FA4B22998E90300A58D4B /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
 		87D9F55D2996D0600092FD11 /* Crocodile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crocodile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D9F5602996D0600092FD11 /* CrocodileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrocodileApp.swift; sourceTree = "<group>"; };
 		87D9F5642996D0620092FD11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,10 +67,13 @@
 			children = (
 				87D9F5602996D0600092FD11 /* CrocodileApp.swift */,
 				870ED23D29976E8B00B477B2 /* MainView.swift */,
+				874FA4B22998E90300A58D4B /* WordView.swift */,
+				874FA4AD2998DD7100A58D4B /* StartButtonView.swift */,
 				870ED243299771EE00B477B2 /* ClockView.swift */,
 				870ED23F2997704200B477B2 /* ProgressTrackView.swift */,
 				870ED241299770AD00B477B2 /* ProgressBarView.swift */,
 				870ED2352996D1E700B477B2 /* Extension + Color.swift */,
+				874FA4B02998DDE400A58D4B /* DataStore.swift */,
 				87D9F5642996D0620092FD11 /* Assets.xcassets */,
 				87D9F5662996D0620092FD11 /* Preview Content */,
 			);
@@ -149,9 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				874FA4AE2998DD7100A58D4B /* StartButtonView.swift in Sources */,
+				874FA4B12998DDE400A58D4B /* DataStore.swift in Sources */,
 				870ED23E29976E8B00B477B2 /* MainView.swift in Sources */,
 				870ED244299771EE00B477B2 /* ClockView.swift in Sources */,
 				870ED2362996D1E800B477B2 /* Extension + Color.swift in Sources */,
+				874FA4B32998E90300A58D4B /* WordView.swift in Sources */,
 				87D9F5612996D0600092FD11 /* CrocodileApp.swift in Sources */,
 				870ED2402997704200B477B2 /* ProgressTrackView.swift in Sources */,
 				870ED242299770AD00B477B2 /* ProgressBarView.swift in Sources */,

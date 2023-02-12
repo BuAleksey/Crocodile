@@ -8,28 +8,37 @@
 import SwiftUI
 
 struct ProgressBarView: View {
-    var counter: Int
-    var countTo: Int
+    let timer = Timer
+        .publish(every: 1, on: .main, in: .common)
+        .autoconnect()
+    @Binding var counter: Int
     
     var body: some View {
-        Circle()
-            .fill(Color.clear)
-            .frame(width: 250, height: 250)
-            .overlay(
-                Circle().trim(from:0, to: progress())
-                    .stroke(
-                        style: StrokeStyle(
-                            lineWidth: 15,
-                            lineCap: .round,
-                            lineJoin:.round
-                        )
-                )
-                    .foregroundColor(
-                        (completed() ? Color.finishColor : Color.fillingLineColor)
-                ).animation(
-                    .easeInOut(duration: 0.2)
-                )
-        )
+        VStack {
+            Circle()
+                .fill(Color.clear)
+                .frame(width: 250, height: 250)
+                .overlay(
+                    Circle().trim(from:0, to: progress())
+                        .stroke(
+                            style: StrokeStyle(
+                                lineWidth: 15,
+                                lineCap: .round,
+                                lineJoin:.round
+                            )
+                    )
+                        .foregroundColor(
+                            (completed() ? Color.finishColor : Color.fillingLineColor)
+                    ).animation(
+                        .easeInOut(duration: 0.2)
+                    )
+            )
+        }
+        .onReceive(timer) { time in
+            if (self.counter < 60) {
+                self.counter += 1
+            }
+        }
     }
     
     func completed() -> Bool {
@@ -37,12 +46,12 @@ struct ProgressBarView: View {
     }
     
     func progress() -> CGFloat {
-        return (CGFloat(counter) / CGFloat(countTo))
+        return (CGFloat(counter) / CGFloat(60))
     }
 }
 
 struct ProgressBarView_Previews: PreviewProvider {
     static var previews: some View {
-        ProgressBarView(counter: 0, countTo: 60)
+        ProgressBarView(counter: .constant(0))
     }
 }

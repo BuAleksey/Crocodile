@@ -8,24 +8,25 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var counter: Int = 0
-    var countTo: Int = 5
-    let timer = Timer
-        .publish(every: 1, on: .main, in: .common)
-        .autoconnect()
+    @State var counter = 0
+    @State var wordLabelIsHidden = true
     
     var body: some View {
-        VStack{
-            ZStack{
-                Color.backgroundColor
-                    .ignoresSafeArea()
-                ProgressTrackView()
-                ProgressBarView(counter: counter, countTo: countTo)
-                ClockView(counter: counter, countTo: countTo)
-            }
-        }.onReceive(timer) { time in
-            if (self.counter < self.countTo) {
-                self.counter += 1
+        ZStack {
+            Color.backgroundColor
+                .ignoresSafeArea()
+            VStack{
+                Spacer()
+                WordView()
+                Spacer()
+                ZStack{
+                    ProgressTrackView()
+                    ProgressBarView(counter: $counter)
+                    ClockView(counter: counter)
+                }
+                Spacer()
+                StartButtonView(wordLabelIsHidden: $wordLabelIsHidden)
+                Spacer()
             }
         }
     }

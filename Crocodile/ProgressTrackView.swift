@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ProgressTrackView: View {
+    
     var body: some View {
         Circle()
             .fill(Color.clear)
