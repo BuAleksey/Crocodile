@@ -15,15 +15,15 @@ struct StartButtonView: View {
             Text("START")
                 .font(.custom("Avenir Next", size: 40))
                 .fontWeight(.bold)
-                .foregroundColor(Color.textColor)
+                .foregroundColor(.textColor)
         }
         .buttonStyle(.borderedProminent)
         .buttonBorderShape(.roundedRectangle)
         .controlSize(.large)
-        .tint(Color.emptyLineColor)
+        .tint(.emptyLineColor)
     }
     
-    func start() {
+    private func start() {
         wordLabelIsHidden.toggle()
     }
 }

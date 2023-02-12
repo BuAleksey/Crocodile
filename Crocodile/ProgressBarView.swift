@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ProgressBarView: View {
-    let timer = Timer
+    @Binding var counter: Int
+    
+    private let timer = Timer
         .publish(every: 1, on: .main, in: .common)
         .autoconnect()
-    @Binding var counter: Int
     
     var body: some View {
         VStack {
@@ -28,25 +29,25 @@ struct ProgressBarView: View {
                             )
                     )
                         .foregroundColor(
-                            (completed() ? Color.finishColor : Color.fillingLineColor)
+                            (completed() ? .finishColor : .fillingLineColor)
                     ).animation(
                         .easeInOut(duration: 0.2)
                     )
             )
         }
         .onReceive(timer) { time in
-            if (self.counter < 60) {
+            if (self.counter < 5) {
                 self.counter += 1
             }
         }
     }
     
-    func completed() -> Bool {
-        return progress() == 1
+    private func completed() -> Bool {
+        progress() == 1
     }
     
-    func progress() -> CGFloat {
-        return (CGFloat(counter) / CGFloat(60))
+    private func progress() -> CGFloat {
+        CGFloat(counter) / CGFloat(5)
     }
 }
 

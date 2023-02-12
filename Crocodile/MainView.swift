@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
-    @State var counter = 0
-    @State var wordLabelIsHidden = true
+    @State private var counter = 0
+    @State private var wordLabelIsHidden = false
     
     var body: some View {
         ZStack {
@@ -17,16 +17,24 @@ struct MainView: View {
                 .ignoresSafeArea()
             VStack{
                 Spacer()
-                WordView()
+                
+                if wordLabelIsHidden {
+                    WordView()
+                }
+                
                 Spacer()
+                
                 ZStack{
                     ProgressTrackView()
                     ProgressBarView(counter: $counter)
                     ClockView(counter: counter)
                 }
+                
                 Spacer()
+                
                 StartButtonView(wordLabelIsHidden: $wordLabelIsHidden)
                 Spacer()
+                
             }
         }
     }

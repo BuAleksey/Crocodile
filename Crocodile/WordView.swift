@@ -8,12 +8,11 @@
 import SwiftUI
 
 struct WordView: View {
-    
     var body: some View {
         Text(DataStore().words.first!)
             .font(.custom("Avenir Next", size: 30))
             .fontWeight(.bold)
-            .foregroundColor(Color.textColor)
+            .foregroundColor(.textColor)
     }
 }
 

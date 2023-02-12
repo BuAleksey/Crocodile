@@ -8,25 +8,27 @@
 import SwiftUI
 
 struct ClockView: View {
-    var counter: Int
+    @State private var isLoss = false
+    let counter: Int
     
     var body: some View {
         VStack {
             Text(counterToMinutes())
                 .font(.custom("Avenir Next", size: 60))
-                .foregroundColor(Color.textColor)
+                .foregroundColor(isLoss ? .finishColor : .textColor)
                 .fontWeight(.black)
         }
     }
     
     func counterToMinutes() -> String {
-        let currentTime = 60 - counter
+        let currentTime = 5 - counter
         let seconds = currentTime % 60
         let minutes = Int(currentTime / 60)
         
         if currentTime != 0 {
             return "\(minutes):\(seconds < 10 ? "0" : "")\(seconds)"
         } else {
+            isLoss.toggle()
             return "loss"
         }
     }
