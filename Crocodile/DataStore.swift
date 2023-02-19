@@ -5,7 +5,9 @@
 //  Created by Buba on 12.02.2023.
 //
 
-struct DataStore {
+class DataStore {
+    static let shared = DataStore()
+    
     let words = [
         "желтые нарциссы",
         "ежедневник",
@@ -18,4 +20,6 @@ struct DataStore {
         "бензопила",
         "созвездие"
     ].shuffled()
+    
+    private init() {}
 }

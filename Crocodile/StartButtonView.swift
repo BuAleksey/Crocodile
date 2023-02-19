@@ -8,11 +8,13 @@
 import SwiftUI
 
 struct StartButtonView: View {
+    @EnvironmentObject var timerManager: TimerManager
     @Binding var wordLabelIsHidden: Bool
     
     var body: some View {
-        Button(action: start) {
-            Text("START")
+        Button(action: buttonAction) {
+            Text(timerManager.isRunning ? "NEXT" : "START")
+                .frame(width: 200)
                 .font(.custom("Avenir Next", size: 40))
                 .fontWeight(.bold)
                 .foregroundColor(.textColor)
@@ -23,8 +25,9 @@ struct StartButtonView: View {
         .tint(.emptyLineColor)
     }
     
-    private func start() {
+    private func buttonAction() {
         wordLabelIsHidden.toggle()
+        timerManager.playAction()
     }
 }
 

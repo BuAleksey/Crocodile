@@ -14,7 +14,7 @@ struct ProgressTrackView: View {
             .frame(width: 250, height: 250)
             .overlay(
                 Circle().stroke(Color.emptyLineColor, lineWidth: 20)
-        )
+            )
     }
 }
 

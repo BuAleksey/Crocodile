@@ -8,37 +8,39 @@
 import SwiftUI
 
 struct MainView: View {
-    @State private var counter = 0
     @State private var wordLabelIsHidden = false
+    @EnvironmentObject var timerManager: TimerManager
     
     var body: some View {
         ZStack {
             Color.backgroundColor
                 .ignoresSafeArea()
-            VStack{
+            VStack {
                 Spacer()
                 
                 if wordLabelIsHidden {
                     WordView()
                 } else {
-                    Text(" ")
+                    Text("  ")
                         .font(.custom("Avenir Next", size: 30))
                         .fontWeight(.bold)
+                        .foregroundColor(.textColor)
                 }
                 
                 Spacer()
                 
                 ZStack{
                     ProgressTrackView()
-                    ProgressBarView(counter: $counter)
-                    ClockView(counter: counter)
+                    ProgressBarView()
+                    ClockView()
                 }
                 
                 Spacer()
-                
                 StartButtonView(wordLabelIsHidden: $wordLabelIsHidden)
                 Spacer()
-                
+            }
+            .onReceive(timerManager.timer) { _ in
+                timerManager.receiveTimerUpdate()
             }
         }
     }

@@ -12,6 +12,7 @@
 		870ED2402997704200B477B2 /* ProgressTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED23F2997704200B477B2 /* ProgressTrackView.swift */; };
 		870ED242299770AD00B477B2 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED241299770AD00B477B2 /* ProgressBarView.swift */; };
 		870ED244299771EE00B477B2 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870ED243299771EE00B477B2 /* ClockView.swift */; };
+		873AB915299AD267000A9422 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873AB914299AD267000A9422 /* TimerManager.swift */; };
 		874FA4AE2998DD7100A58D4B /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874FA4AD2998DD7100A58D4B /* StartButtonView.swift */; };
 		874FA4B12998DDE400A58D4B /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874FA4B02998DDE400A58D4B /* DataStore.swift */; };
 		874FA4B32998E90300A58D4B /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874FA4B22998E90300A58D4B /* WordView.swift */; };
@@ -26,6 +27,7 @@
 		870ED23F2997704200B477B2 /* ProgressTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressTrackView.swift; sourceTree = "<group>"; };
 		870ED241299770AD00B477B2 /* ProgressBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		870ED243299771EE00B477B2 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		873AB914299AD267000A9422 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 		874FA4AD2998DD7100A58D4B /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 		874FA4B02998DDE400A58D4B /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		874FA4B22998E90300A58D4B /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				870ED243299771EE00B477B2 /* ClockView.swift */,
 				870ED23F2997704200B477B2 /* ProgressTrackView.swift */,
 				870ED241299770AD00B477B2 /* ProgressBarView.swift */,
+				873AB914299AD267000A9422 /* TimerManager.swift */,
 				870ED2352996D1E700B477B2 /* Extension + Color.swift */,
 				874FA4B02998DDE400A58D4B /* DataStore.swift */,
 				87D9F5642996D0620092FD11 /* Assets.xcassets */,
@@ -161,6 +164,7 @@
 				874FA4AE2998DD7100A58D4B /* StartButtonView.swift in Sources */,
 				874FA4B12998DDE400A58D4B /* DataStore.swift in Sources */,
 				870ED23E29976E8B00B477B2 /* MainView.swift in Sources */,
+				873AB915299AD267000A9422 /* TimerManager.swift in Sources */,
 				870ED244299771EE00B477B2 /* ClockView.swift in Sources */,
 				870ED2362996D1E800B477B2 /* Extension + Color.swift in Sources */,
 				874FA4B32998E90300A58D4B /* WordView.swift in Sources */,

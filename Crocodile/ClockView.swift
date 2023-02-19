@@ -8,34 +8,20 @@
 import SwiftUI
 
 struct ClockView: View {
-    @State private var isLoss = false
-    let counter: Int
+    @EnvironmentObject var timerManager: TimerManager
     
     var body: some View {
         VStack {
-            Text(counterToMinutes())
+            Text(timerManager.timeFormatter)
                 .font(.custom("Avenir Next", size: 60))
-                .foregroundColor(isLoss ? .finishColor : .textColor)
+                .foregroundColor(timerManager.completed() ? .finishColor : .textColor)
                 .fontWeight(.black)
-        }
-    }
-    
-    private func counterToMinutes() -> String {
-        let currentTime = 5 - counter
-        let seconds = currentTime % 60
-        let minutes = Int(currentTime / 60)
-        
-        if currentTime != 0 {
-            return "\(minutes):\(seconds < 10 ? "0" : "")\(seconds)"
-        } else {
-            isLoss.toggle()
-            return "loss"
         }
     }
 }
 
 struct ClockView_Previews: PreviewProvider {
     static var previews: some View {
-        ClockView(counter: 0)
+        ClockView()
     }
 }
