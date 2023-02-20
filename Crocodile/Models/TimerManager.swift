@@ -11,12 +11,12 @@ class TimerManager: ObservableObject {
     @Published var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
     @Published var counter: CGFloat = 0
-    @Published var duration: CGFloat = 10
-    
-    @Published var selectedMinutes = 0
-    @Published var selectedSeconds = 10
+    @Published var duration: CGFloat = 60
     
     @Published var isRunning = false
+    
+    private var selectedMinutes = 0
+    private var selectedSeconds = 60
     
     var progress: CGFloat {
         counter / duration

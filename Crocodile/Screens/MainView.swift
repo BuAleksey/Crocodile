@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @State private var wordLabelIsHidden = false
-    @EnvironmentObject var timerManager: TimerManager
+    @EnvironmentObject private var timerManager: TimerManager
     
     var body: some View {
         ZStack {
@@ -43,11 +43,5 @@ struct MainView: View {
                 timerManager.receiveTimerUpdate()
             }
         }
-    }
-}
-
-struct MainView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
     }
 }

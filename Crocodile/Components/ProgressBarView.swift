@@ -33,9 +33,3 @@ struct ProgressBarView: View {
         }
     }
 }
-
-struct ProgressBarView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProgressBarView()
-    }
-}

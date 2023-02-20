@@ -17,9 +17,3 @@ struct ProgressTrackView: View {
             )
     }
 }
-
-struct ProgressTrackView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProgressTrackView()
-    }
-}

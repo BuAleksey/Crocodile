@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ClockView: View {
-    @EnvironmentObject var timerManager: TimerManager
+    @EnvironmentObject private var timerManager: TimerManager
     
     var body: some View {
         VStack {
@@ -17,11 +17,5 @@ struct ClockView: View {
                 .foregroundColor(timerManager.completed() ? .finishColor : .textColor)
                 .fontWeight(.black)
         }
-    }
-}
-
-struct ClockView_Previews: PreviewProvider {
-    static var previews: some View {
-        ClockView()
     }
 }

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct StartButtonView: View {
-    @EnvironmentObject var timerManager: TimerManager
+    @EnvironmentObject private var timerManager: TimerManager
     @Binding var wordLabelIsHidden: Bool
     
     var body: some View {
@@ -28,11 +28,5 @@ struct StartButtonView: View {
     private func buttonAction() {
         wordLabelIsHidden.toggle()
         timerManager.playAction()
-    }
-}
-
-struct StartButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        StartButtonView(wordLabelIsHidden: .constant(false))
     }
 }

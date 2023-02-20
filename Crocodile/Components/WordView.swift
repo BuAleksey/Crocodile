@@ -17,9 +17,3 @@ struct WordView: View {
             .foregroundColor(.textColor)
     }
 }
-
-struct WordView_Previews: PreviewProvider {
-    static var previews: some View {
-        WordView()
-    }
-}

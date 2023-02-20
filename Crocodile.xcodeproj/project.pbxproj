@@ -48,6 +48,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		875058F029A4039F00F48EF6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				87D9F5602996D0600092FD11 /* CrocodileApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		875058F129A403AA00F48EF6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				870ED23D29976E8B00B477B2 /* MainView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		875058F229A403D000F48EF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				873AB914299AD267000A9422 /* TimerManager.swift */,
+				874FA4B02998DDE400A58D4B /* DataStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		875058F329A403E100F48EF6 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				874FA4B22998E90300A58D4B /* WordView.swift */,
+				870ED243299771EE00B477B2 /* ClockView.swift */,
+				870ED23F2997704200B477B2 /* ProgressTrackView.swift */,
+				870ED241299770AD00B477B2 /* ProgressBarView.swift */,
+				874FA4AD2998DD7100A58D4B /* StartButtonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		875058F429A4041400F48EF6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				870ED2352996D1E700B477B2 /* Extension + Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		87D9F5542996D0600092FD11 = {
 			isa = PBXGroup;
 			children = (
@@ -67,16 +112,11 @@
 		87D9F55F2996D0600092FD11 /* Crocodile */ = {
 			isa = PBXGroup;
 			children = (
-				87D9F5602996D0600092FD11 /* CrocodileApp.swift */,
-				870ED23D29976E8B00B477B2 /* MainView.swift */,
-				874FA4B22998E90300A58D4B /* WordView.swift */,
-				874FA4AD2998DD7100A58D4B /* StartButtonView.swift */,
-				870ED243299771EE00B477B2 /* ClockView.swift */,
-				870ED23F2997704200B477B2 /* ProgressTrackView.swift */,
-				870ED241299770AD00B477B2 /* ProgressBarView.swift */,
-				873AB914299AD267000A9422 /* TimerManager.swift */,
-				870ED2352996D1E700B477B2 /* Extension + Color.swift */,
-				874FA4B02998DDE400A58D4B /* DataStore.swift */,
+				875058F029A4039F00F48EF6 /* App */,
+				875058F129A403AA00F48EF6 /* Screens */,
+				875058F329A403E100F48EF6 /* Components */,
+				875058F229A403D000F48EF6 /* Models */,
+				875058F429A4041400F48EF6 /* Extensions */,
 				87D9F5642996D0620092FD11 /* Assets.xcassets */,
 				87D9F5662996D0620092FD11 /* Preview Content */,
 			);
